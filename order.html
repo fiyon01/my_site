@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="web development portfolio">
+    <meta name="author" content="githinjikamau">
+    <title>Githinji kamau portfolio</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + JohnDoe main styles -->
+	<link rel="stylesheet" href="assets/css/johndoe.css">
+   
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a>
+    <header class="header">
+        <div class="container">
+            <ul class="social-icons pt-3">
+                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
+            </ul>  
+            <div class="header-content">
+                <h4 class="header-subtitle" >Hello, I am</h4>
+                <h1 class="header-title">Githinji Kamau</h1>
+                <h6 class="header-mono">Fullstack Web developer</h6>
+                <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Print Resume</button>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    
+                </ul>
+                <ul class="navbar-nav brand">
+                    <img src="assets/imgs/FB_IMG_1725135135175.jpg" alt="" class="brand-img">
+                    <li class="brand-txt">
+                        <h5 class="brand-title">Githinji Kamau</h5>
+                        <div class="brand-subtitle">Fullstack developer</div>
+                    </li>
+                </ul>
+              
+            </div>
+        </div>
+    </nav>
+<div class="container">
+    <h1 class="text-center mt-5 mb-4">Order Graphic Design Services</h1>
+    <div class="order-form">
+        <form id="orderForm" action="/submit-order" method="POST"> <!-- Change the action to your server endpoint -->
+            <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+            <div class="mb-3">
+                <label for="package" class="form-label">Select Design Package</label>
+                <select class="form-select" id="package" name="package" required>
+                    <option value="" disabled selected>Select a package</option>
+                    <option value="Posters Design">Posters Design - Ksh 500</option>
+                    <option value="Logo Design">Logo Design - Ksh 600</option>
+                    <option value="Flyer Design">Flyer Design - Ksh 700</option>
+                    <option value="Pro Design Package">Pro Design Package - Ksh 150,000</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="details" class="form-label">Additional Details/Requirements</label>
+                <textarea class="form-control" id="details" name="details" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="budget" class="form-label">Budget (optional)</label>
+                <input type="number" class="form-control" id="budget" name="budget">
+            </div>
+            <button type="submit" class="btn btn-primary">Place Order</button>
+        </form>
+    </div>
+</div>
+<footer class="footer py-3">
+    <div class="container">
+        <p class="small mb-0 text-light">
+            &copy; <script>document.write(new Date().getFullYear())</script> Created With <i class="ti-heart text-danger"></i> By Githinji Kamau</span></a> 
+        </p>
+    </div>
+</footer>
+
+<!-- core  -->
+<script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+<script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+<!-- bootstrap 3 affix -->
+<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+<!-- Isotope  -->
+<script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+
+<!-- Google mpas -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+<!-- JohnDoe js -->
+<script src="assets/js/johndoe.js"></script>
+
+</body>
+</html>

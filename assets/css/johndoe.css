@@ -445,6 +445,9 @@ mark,
   padding: 0.2em;
   background-color: #fcf8e3;
 }
+.list a{
+  color:#fcf8e3;
+}
 
 .list-unstyled {
   padding-left: 0;
@@ -11679,4 +11682,24 @@ pre .code {
   background: #F85C70;
   display: block;
   margin-top: 10px;
+}
+@keyframes appear{
+  from{
+    opacity: 0;
+    scale: 0.4;
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+  }
+}
+.anime{
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+
+}
+.confirm_message{
+  color:green;
+  display: none;
 }

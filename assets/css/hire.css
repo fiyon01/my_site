@@ -1,0 +1,100 @@
+body {
+    background-color:#6c757d;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    background-color: #f8f9fa;
+    max-width: 600px; /* Center the form */
+    margin: 50px auto; /* Add some space at the top */
+    height: auto;
+    top: 6rem;
+}
+.container h2{
+    font-family: "Dosis", sans-serif;
+    margin-left: 2.2%;
+    padding-top: 18px;
+}
+.container p{
+    margin-left: 2.2%;
+}
+.container .project-sec{
+    margin-left: 2.2%;
+}
+.form-control {
+    margin-bottom: 20px; /* Space between form fields */
+}
+.form-group input{
+    margin-left: 2.2%;
+    width: 95%;
+    padding: .8rem 0;
+    border:1px solid #6c757d;
+    border-radius: 4px;
+}
+.form-group input ::placeholder{
+    margin-left: 8px;
+}
+.form-group input:focus{
+    outline: none;
+    border:6px solid #FC8BC0;
+}
+.btn-primary {
+    width: 95%;
+    margin-left: 2.4%; /* Make the button full-width */
+}
+textarea{
+    padding:3rem 0;
+    width: 95%;
+    margin-left: 2.2%;
+    border:1px solid #6c757d;
+    caret-color: #F85C70;
+    border-radius: 4px;
+}
+textarea:focus{
+    outline: none;
+    border:3px solid #FC8BC0;
+}
+button{
+    border: 1px solid #F85C70 ;
+    padding: .8rem 0;
+    margin-bottom: 3rem;
+    border-radius: 4px;
+}
+button:focus{
+    background-color: #F85C70;
+    color: #f8f9fa;
+}
+@media(max-width:(var(--breakpoint-md))){
+    .form-group input{
+        margin-left: 4.9%;
+        width: 90%;
+        padding: .8rem 0;
+        border:1px solid #6c757d;
+        border-radius: 4px;
+    }
+    .form-group input:focus{
+        outline: none;
+        border:6px solid #FC8BC0;
+    }
+    textarea{
+        padding:3rem 0;
+        width: 90%;
+        margin-left: 4.9%;
+        border:1px solid #6c757d;
+        caret-color: #F85C70;
+        border-radius: 4px;
+    }
+    textarea:focus{
+        outline: none;
+        border:3px solid #FC8BC0;
+    }
+    button{
+        border: 1px solid #F85C70 ;
+        padding: .5rem 0;
+    }
+    button:focus{
+        background-color: #F85C70;
+        color: #f8f9fa;
+    }
+}

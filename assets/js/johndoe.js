@@ -151,3 +151,26 @@ function initMap() {
     ],
   });
 }
+const bookFunc = () => {
+  window.location.href = "Booking.html";
+}
+
+const hireMeFunc = () => {
+  window.location.href = "hire.html";
+}
+
+document.querySelectorAll('#book-btn1, #book-btn2, #book-btn3, #book-btn4').forEach(button => {
+  button.addEventListener('click', bookFunc);
+});
+
+document.getElementById("download-btn").addEventListener("click", function() {
+  window.location.href = "https://drive.google.com/uc?export=download&id=135byc1itq5qCpzMqJi8Yq-S3xhGD8gAI";
+});
+
+let  orderBtns = document.querySelectorAll("#order-btn1","#order-btn2","#order-btn3")
+
+orderBtns.forEach(orderBtn => {
+  orderBtn.addEventListener('click', function(){
+    window.location.href="order.html"
+  });
+});
