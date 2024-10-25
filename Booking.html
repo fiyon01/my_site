@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Booking Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="booking-container">
+    <h1>Book Your Design Service</h1>
+    <p>Choose from our Web Design or Graphics Design services, and let’s bring your vision to life!</p>
+
+    <form class="booking-form" action="/submit-booking" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="service">Select Service</label>
+      <select id="service" name="service" required>
+        <option value="">--Choose a Service--</option>
+        <option value="web-design">Web Design</option>
+        <option value="graphics-design">Graphics Design</option>
+      </select>
+
+      <label for="description">Project Description</label>
+      <textarea id="description" name="description" rows="4" placeholder="Describe your project briefly..." required></textarea>
+
+      <label for="date">Preferred Start Date</label>
+      <input type="date" id="date" name="date" required>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+
+</body>
+</html>
